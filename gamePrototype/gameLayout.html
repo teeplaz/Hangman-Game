@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+ 
+  <!-- NAV BAR TITLE OF GAME -->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Game 1 </span>
+  </nav>
+  <div class="container" id="game">
+    <div class="row mt-5 mx-auto">
+      <h1 class="h1">Number Guesser</h1>
+          <blockquote class="blockquote m-3"> You have 5 guesses to guess a number betwixt <span class="min-num"></span> and <span class="max-num"></span></blockquote>
+    </div>
+      <div class="row my-3 mr-3 ">
+          <!-- FORM FOR INPUT OF GUESSES  -->
+          <div class="col-md-6">
+
+              <div class="input-group mb-3">
+                  <input type="number" class="form-control" id="guess-input" placeholder="Your guess here" aria-label="User Guess" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" id="guess-btn" type="button">Submit Guess</button>
+                  </div>
+                </div>
+          
+          </div>
+     
+        <!-- GUESSED NUMBERS DISPLAY AREA-->
+          <div class="col-md-6 ">
+             <ul class="list-group">
+                 <li class="list-group-item messaging">What you have Guessed</li>
+                 <li class="list-group-item" id="special-message"></li>                 
+                 <li class="list-group-item" id="list-item-guessed"></li>
+                 <button type="button" class="btn btn-secondary" id="reset-btn">Reset Game</button>
+               </ul>
+          </div>
+      </div>
+     </div>
+
+
+   
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="resources/js/script.js"></script>
+</body>
+</html>
